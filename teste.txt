@@ -1,1 +1,12 @@
 Teste do Github.
+
+Diferenças do css do slide
+
+.main-logo {
+    font-size: 2rem; era 4rem.
+
+.search-form {
+    max-width: 34rem; era 64rem.
+
+Criado uma classe para abrigar o <header> e o <main>
+.content

@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="prato.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-primary: #269fe6;
@@ -63,14 +65,14 @@
         }
         .container {
             max-width: 144rem;
-            background: red;
             margin: 0 auto;
+            padding: var(--spacing-gutter-medium);
         }
         .main-header-container {
             background: var(--color-primary-dark);
         }
         .main-logo {
-            font-size: 4rem;
+            font-size: 2rem;
             color: var(--color-white);
             text-decoration: none;
             display: flex;
@@ -82,7 +84,7 @@
         }
         .search-form {
             border: 0.2rem solid var(--color-primary-dark);
-            max-width: 64rem;
+            max-width: 34rem;
             margin: 0 auto;
             border-radius: 0.4rem;
             position: relative;
@@ -129,17 +131,20 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-large);
         }
-        /* * {
+         * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         } */
-        /* html {
+         html {
             font-size: 62,5%;
         }
-        h1 {
+        /*h1 {
             text-align: center;
             color: blueviolet;
         }   */
+        .content {
+            padding: 0 50px 50px 50px;
+        }
     </style>
 </head>
