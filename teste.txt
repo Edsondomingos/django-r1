@@ -10,3 +10,6 @@ Diferenças do css do slide
 
 Criado uma classe para abrigar o <header> e o <main>
 .content
+
+.recipe-list-item {
+    max-width: 32rem; era 64rem.

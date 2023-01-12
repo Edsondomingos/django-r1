@@ -119,7 +119,7 @@
             color: var(--color-primary);
         }
         .main-content {
-            background: blue;
+            background: rgb(199, 221, 240);
             padding-top: 0;
         }
         .temp {
@@ -158,7 +158,7 @@
         }
 
         .recipe-list-item {
-            max-width: 64rem;
+            max-width: 32rem;
         }
 
         .recipe-list-item:hover {
@@ -191,6 +191,13 @@
             text-decoration: none;
         }
 
+        .recipe-meta-container { /*Eu Fiz*/
+            display: flex;
+            justify-content: space-evenly;
+            padding: 30px;
+            background: var(--color-gray-1);
+        }
+
         .recipe-author a:hover {
             color: var(--color-primary-dark);
         }
@@ -207,6 +214,25 @@
 
         .recipe-footer a:hover {
             filter: brightness(2);
+        }
+
+        .main-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--color-primary-dark);
+            color: var(--color-white);
+            padding: var(--spacing-gutter-large);
+        }
+
+        .main-footer a {
+            color: var(--color-white);
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+
+        .main-footer a:hover {
+            filter: brightness(0.8);
         }
     </style>
 </head>
