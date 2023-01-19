@@ -26,6 +26,7 @@ def my_view(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('recipes.urls')),
+    path('how_make/', include('how_make.urls')),
     path('home/', home),
     path('sobre0/', my_view),
     path('sobre01/', sobre),
