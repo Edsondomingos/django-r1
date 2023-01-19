@@ -6,9 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como fazer</title>
 </head>
+    {% include 'how_make/partials/head.htm' %}
 <body>
+    {% include 'how_make/partials/header.htm' %}
 
-    {% include 'recipes/partials/head.htm' %}
+    <section class="titulo">
+        <h1>
+            Título da Receita        
+        </h1>
+        <p>DataPublicação receita</p>
+    </section>
+    
+        
+
+    <main class="main-content">
+        <img src="../../../../imgs/burguer2.jpg" alt="Imagem do Produto a ser preparado">
+
+        <article class="preparo">
+            <ul>
+                <h4>Ingredientes</h4>
+                <li>Nome</li>
+            </ul>
+
+            <ul>
+                <h4>Modo de Preparo:</h4>
+                <li>Nome</li>
+            </ul>
+        </article>
+
+        <aside class="autor">
+            <ul>Informações do autor da receita.</ul>
+                <li>Nome</li>
+                <li>Profissão</li>
+                <li>Email</li>
+                <li>Redes sociais</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            <a href="https://linkedin.com/in/edson-domingos" target="_blank">
+                &copyEdson Domingos
+            </a>
+        </p>
+    </footer>
     
 </body>
 </html>
