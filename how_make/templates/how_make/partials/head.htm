@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css" integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="prato.png" type="image/png">
+    <link rel="icon" href="{% static 'imgs/prato.ico' %}" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
@@ -102,6 +103,7 @@
             border: 1px solid #000;
             margin: 50px;
             position: relative;
+            border-radius: 7px;
         }
         .titulo p {
             font-size: 15px;
@@ -127,41 +129,42 @@
             height: 90vh;
         }
 
-        /* .main-content section div {
-            display: flex;
-            flex-direction: column;
-        } */
-
         .main-content img {
-            /* width: 40%; */
-            /* height: 200px; */
             height: 48%;
             border: 1px solid #000;
+            border-radius: 7px;
         }
+
         .autor {
-            /* width: 40%; */
             height: 48%;
             border: 1px solid #000;
             padding: 5px;
+            border-radius: 7px;
         }
 
         .preparo {
             border: 1px solid #000;
             width: 50%;
-            /* height: 500px; */
             height:90vh;
             padding: 15px;
-            list-style: none;
+        }
+
+        .preparo li {
+            margin: 10px;
+            box-sizing: border-box;
+            font-size: 1rem;
+
         }
         
         .autor li {
             padding: 7px;
         }
         .rodape {
-            border: 1px solid #000;
+            /* border: 1px solid #000; */
             margin: 20px;
             padding: 10px;
             height: 100px;
+            text-align: center;
         }
     </style>
 </head>

@@ -1,6 +1,8 @@
+{% load static %}
 <div class="recipe recipe-list-item">
     <div class="recipe-cover">
-        <img src="https://via.placeholder.com/1280x720/269fe6" alt="">
+        <!-- <img src="https://via.placeholder.com/1280x720/269fe6" alt="Imagem da refeição" title="imagem"> -->
+        <img src="{% static 'imgs/burguer1.png' %}" alt="Imagem da refeição" title="imagem">
     </div>
     <div class="recipe-title-container">
         <h2 class="recipe-title">Hamburguer Especial com Batara Frita.</h2>
@@ -45,7 +47,7 @@
 
     <footer class="recipe-footer">
         <a class="recipe-read-more button button-dark button-full-width"
-            href="/recipe/3/">
+            href="/how_make/">
             <i class="fas fa-eye">
                 <span>ver mais...</span>
             </i>

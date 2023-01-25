@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,9 +13,9 @@
 
     <section class="titulo">
         <h1>
-            Título da Receita        
+            {{ titulo }}        
         </h1>
-        <p>DataPublicação receita</p>
+        <p>{{ data }}</p>
     </section>
     
         
@@ -23,14 +24,14 @@
 
         <section class="">
             <!-- <div> -->
-                <img src="{% /imgs/burguer.png %}" alt="Imagem do Produto a ser preparado">
+                <img src="{% static 'imgs/burguer1.png' %}" alt="Imagem do Produto a ser preparado">
 
                 <aside class="autor">
                     <ul>Informações do autor da receita.</ul>
-                        <li>Nome</li>
-                        <li>Profissão</li>
-                        <li>Email</li>
-                        <li>Redes sociais</li>
+                        <li>{{ name }}</li>
+                        <li>{{ profissao }}</li>
+                        <li>{{ email}}</li>
+                        <li>{{ social }}</li>
                     </ul>
                 </aside>
             <!-- </div> -->
@@ -40,12 +41,16 @@
             <article class="preparo">
                 <ul>
                     <h4>Ingredientes</h4>
-                    <li>Nome</li>
+                    {% for i in ingredientes %}
+                    <li>{{ i }}</li>
+                    {% endfor %}
                 </ul>
 
                 <ul>
                     <h4>Modo de Preparo:</h4>
-                    <li>Nome</li>
+                    {% for i in preparo %}
+                    <li>{{ i }}</li>
+                    {% endfor %}
                 </ul>
             </article>
         <!-- </section> -->
@@ -54,6 +59,7 @@
 
     <footer class="rodape">
         <p>
+            Desenvolvido por 
             <a href="https://linkedin.com/in/edson-domingos" target="_blank">
                 &copyEdson Domingos
             </a>
