@@ -1,3 +1,5 @@
 o static que funciona é dentro de recipes(dentro da aplicação)
 
 ajustar layout do itens
+
+https://ohmycode.com.br/servindo-arquivos-estaticos-no-django-em-producao-com-whitenoise/
