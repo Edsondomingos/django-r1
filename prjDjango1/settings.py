@@ -20,12 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-+&e+at=dov&7gg421)66x%%u(&spvbahjfey1*qf=0g(5u9=(e'
+# SECRET_KEY = 'django-insecure-+&e+at=dov&7gg421)66x%%u(&spvbahjfey1*qf=0g(5u9=(e'
+SECRET_KEY = '2866848e24424dadbe54be454c49f6ea' # 4f5e3dfa-007e-40fe-8976-c60184ddae65
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recipesdjango.azurewebsites.net/']
 
 
 # Application definition
