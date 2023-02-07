@@ -26,7 +26,7 @@ SECRET_KEY = '2866848e24424dadbe54be454c49f6ea' # 4f5e3dfa-007e-40fe-8976-c60184
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['recipesdjango.azurewebsites.net/']
+ALLOWED_HOSTS = ['recipesdjango.azurewebsites.net']
 
 
 # Application definition
