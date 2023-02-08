@@ -1,12 +1,12 @@
 from django.shortcuts import render
-from .utils.recipes.factory import make_recipe
+from utils.recipes.factory import make_recipe
 
 # Create your views here.
 # HTTP Request
 
 def home(request):
     return render(request, 'recipes/pages/home.html', context={
-        'recipes': [make_recipe() for _ in range(7)],
+        'recipes': [make_recipe() for _ in range(3)],
     })
  
 def recipe(request, id):
