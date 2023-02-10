@@ -3,11 +3,18 @@
 {% block title %} Recipe {% endblock title %}
 
 {% block content %}
-    
-    <div class="main-content main-content-detail container">
-      
-        {% include 'recipes/partials/recipe.html' %}
-      
-    </div>
+
+<div class="main-content main-content-detail container">
+    {% if id == 1 %}
+    {% include 'recipes/partials/recipe.html' %}
+    {% endif %}
+    {% if id == 2 %}
+    {% include 'recipes/partials/recipe2.html' %}
+    {% endif %}
+    {% if id == 3 %}
+    {% include 'recipes/partials/recipe3.html' %}
+    {% endif %}
+
+</div>
 
 {% endblock content %}
